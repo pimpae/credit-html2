@@ -71,7 +71,7 @@ main .container{
   border: 0px;
 }
 .credit .custom-control .custom-control-label::before{ 
-  background-color: greenyellow;
+  background-color: #e6b553;
   border: 0px;
   border-radius: 0px;
 } 
@@ -79,7 +79,7 @@ main .container{
   margin-bottom: 20px !important;
 } 
 .credit .custom-control-label{
-  color: greenyellow;
+  color: #e6b553;
   font-style: italic;
   font-size: 18px;
 }
@@ -96,6 +96,14 @@ main .container{
   color: #7ca470;
   font-style: normal;
   font-size: 18px;
+}
+.credit .custom-control.custom2 .custom-control-label::before{ 
+  background-color: #fff;  
+  border-radius: 0px;
+  border: 0px;
+} 
+.credit .custom2 .custom-control-label{
+  color: #fff; 
 }
 .btn{
   margin-bottom: -60px;

@@ -1,0 +1,124 @@
+a:hover{
+  text-decoration: none;
+}
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1250px;
+  }
+}
+body{
+  font-family: 'Prompt', sans-serif;
+}      
+main{
+  background: url(../images/bg.jpg);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% ;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+}     
+h1{
+  color: #e6b553;
+}
+main::after{
+  z-index: 3;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+} 
+main .container{
+  position: relative;
+  z-index: 5; 
+  color: #fff;
+}
+.funds{
+  padding: 20px;
+  border: 4px solid #e6b553;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+.funds span{
+  color: red;
+}
+.credit{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 4px solid #ffff8b;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.credit input{
+  display: block;
+  width: 85%;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 10px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px; 
+  margin: auto;
+  margin-bottom: 30px;
+  color: #ffd414;
+  border: 0px;
+}
+.credit .custom-control .custom-control-label::before{ 
+  background-color: greenyellow;
+  border: 0px;
+  border-radius: 0px;
+} 
+.credit .custom-control{ 
+  margin-bottom: 20px !important;
+} 
+.credit .custom-control-label{
+  color: greenyellow;
+  font-style: italic;
+  font-size: 18px;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+  background-image: url(../images/ch.svg);
+  background-size: 18px 18px;
+}  
+.credit .custom-control.custom2 .custom-control-label::before{ 
+  background-color: #7ca470;
+  border: 0px;
+  border-radius: 4px;
+} 
+.credit .custom2 .custom-control-label{
+  color: #7ca470;
+  font-style: normal;
+  font-size: 18px;
+}
+.btn{
+  margin-bottom: -60px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+} 
+.btn-success{ 
+  padding: 10px 35px;
+} 
+
+
+@media only screen and (max-width: 1024px) { /* MOBILE */ 
+  main{ 
+    background-size: auto 100% ; 
+  }   
+  h1{
+    font-size: 25px;
+  }
+  .funds {
+    padding: 15px; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    font-size: 13px;
+  }
+} 
